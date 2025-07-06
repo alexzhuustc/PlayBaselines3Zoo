@@ -2,3 +2,4 @@
 output
 model/*
 logs
+tensorboard-log

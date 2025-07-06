@@ -1,4 +1,6 @@
 [TOC]
 
+在Windows中运行
+
 # 安装依赖
-`C:\Users\alexzhu\AppData\Roaming\Python\Scripts\uv.exe sync`
+`build_uv_sync.bat`

@@ -1,11 +1,14 @@
 import sys
+import pygame
+pygame.init()
 
 sys.argv = [sys.argv[0]]
 sys.argv.extend([
     '--algo', 'ppo',
-    '--env', 'CartPole-v1',
+    '--env', 'SpaceInvadersNoFrameskip-v4',
+    '-n', '5000',
     '--folder', 'logs/',
-    '-n', '1000',
+    '--load-best',
      ])
 
 from rl_zoo3.enjoy import enjoy
