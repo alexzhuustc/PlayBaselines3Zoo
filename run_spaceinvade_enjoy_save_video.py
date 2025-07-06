@@ -9,7 +9,7 @@ def main():
             '--algo', 'ppo',
             '--env', 'SpaceInvadersNoFrameskip-v4',
             '--folder', 'logs/',
-            '-n', '3000',
+            '-n', '5000',
             '--load-best',
         ]
     )

@@ -9,7 +9,7 @@ dependencies = [
     "stable-baselines3[extra]",
     "tensorboard",
     "standard-imghdr",
-    "torch==2.7.1",
+    "torch",
 ]
 
 [tool.uv.sources]
@@ -23,7 +23,10 @@ torchvision = [
 [[tool.uv.index]]
 name = "pytorch-cu128"
 
-# 国内镜像：https://mirror.nju.edu.cn/pytorch/whl/cu128
-# 我的NAS缓存：http://192.168.1.16:3320/pytorch/whl/cu128
-url = "http://192.168.1.16:3320/pytorch/whl/cu128" # 国内镜像
+# 国内镜像：
+# url = https://mirror.nju.edu.cn/pytorch/whl/cu128
+
+# 我的NAS缓存：
+url = "http://192.168.1.16:3320/pytorch/whl/cu128"
+
 explicit = true

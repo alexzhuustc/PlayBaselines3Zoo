@@ -1,17 +1,15 @@
 import sys
-
-sys.argv = [sys.argv[0]]
-sys.argv.extend([
-    '--algo', 'ppo',
-    '--env', 'CartPole-v1',
-    '--folder', 'logs/',
-    '-n', '1000',
-     ])
-
-from rl_zoo3.enjoy import enjoy
-
+from rl_zoo3.train import train
 def main():
-    enjoy()
+    sys.argv = [sys.argv[0]]
+    sys.argv.extend([
+        '--algo', 'ppo',
+        '--env', 'CartPole-v1',
+        '--log-folder', 'logs/',
+        '-n', '5000',
+         ])
+
+    train()
 
 if __name__ == "__main__":
     main()
